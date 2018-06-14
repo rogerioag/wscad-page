@@ -58,12 +58,20 @@
 								</ul>
 							</li>
 							<li><a href="inscricoes.html">Inscrições</a></li>
-							<li><a href="caravana.html">Caravana</a></li>
+							<!--<li><a href="caravana.html">Caravana</a></li>-->
 							<li><a href="local.html">Informações Locais</a></li>
 							<li><a href="comites.html">Comitês</a></li>
 							<li><a href="http://wscad.sbc.org.br/edicoes/index.html">Edições Passadas</a></li>
 						</ul>
 					</nav>
+					<div class="offset1 span8 pull-left" style="background-color:none; bottom:0; width: 8%">
+   					 <span style="display:block; height: 80px;"></span>
+   					 <center>
+   					 	<a href="http://www.sbc.org.br" target="_blank">
+   					 		<img id="logo_promocao_sbc" src="images/logos/logo-promocao-sbc-bl.png" border="0" height="50%" width="50%"/>
+   					 	</a>
+   					 </center>
+    				</div>
 			</header>
 
 			<!-- Main -->
@@ -94,31 +102,93 @@
 							<h2>Palestras/Keynotes</h2>
 						</header>
 
-						<table>
+						<!-- Keynote 1 -->
+						<table id="keynote1">
 						  <tr>
-						    <th><strong>Keynote 1:</strong> An Overview of High Performance Computing and Challenges for the Future</th>
+						    <th><h3><strong>Keynote 1:</strong> An Overview of High Performance Computing and Challenges for the Future</h3></th>
 						  </tr>
 						  <tr>
 						  	<td>
-						  		<strong><a href="http://www.netlib.org/utk/people/JackDongarra/">Jack Dongarra</a></strong>, University of Tennessee and Oak Ridge National Laboratory
+						  		<h4><strong><a href="http://www.netlib.org/utk/people/JackDongarra/">Jack Dongarra</a></strong>, University of Tennessee and Oak Ridge National Laboratory</h4>
 						  	</td>
 						  </tr>
 						  <tr>
-						    <td><strong>Abstract:</strong> In this talk we examine how high performance computing has changed over the last 10-year and look toward the future in terms of trends. These changes have had and will continue to have a major impact on our software. A new generation of software libraries and algorithms are needed for the effective and reliable use of (wide area) dynamic, distributed and parallel environments.  Some of the software and algorithm challenges have already been encountered, such as management of communication and memory hierarchies through a combination of compile--time and run--time techniques, but the increased scale of computation, depth of memory hierarchies, range of latencies, and increased run--time environment variability will make these problems much harder.</td>
+						    <td><p><strong>Abstract:</strong> In this talk we examine how high performance computing has changed over the last 10-year and look toward the future in terms of trends. These changes have had and will continue to have a major impact on our software. A new generation of software libraries and algorithms are needed for the effective and reliable use of (wide area) dynamic, distributed and parallel environments.  Some of the software and algorithm challenges have already been encountered, such as management of communication and memory hierarchies through a combination of compile--time and run--time techniques, but the increased scale of computation, depth of memory hierarchies, range of latencies, and increased run--time environment variability will make these problems much harder.</p></td>
 						  </tr>
 						  <tr>
 						  	<td>
 						  	<table border="0px">
-						    <td>
+						    <td style="vertical-align:top">
 						    	<img src="images/palestrantes/jack-2013-web-tiny.jpeg" alt="Jack Dongarra" style="width:150px;height:150px;">
 						    </td>
 						    <td>
-						    	<strong>Jack Dongarra</strong> holds an appointment at the University of Tennessee, Oak Ridge National Laboratory, and the University of Manchester. He specializes in numerical algorithms in linear algebra, parallel computing, use of advanced-computer architectures, programming methodology, and tools for parallel computers. He was awarded the IEEE Sid Fernbach Award in 2004; in 2008 he was the recipient of the first IEEE Medal of Excellence in Scalable Computing; in 2010 he was the first recipient of the SIAM Special Interest Group on Supercomputing's award for Career Achievement; in 2011 he was the recipient of the IEEE Charles Babbage Award; and in 2013 he received the ACM/IEEE Ken Kennedy Award. He is a Fellow of the AAAS, ACM, IEEE, and SIAM and a foreign member of the Russian Academy of Science and a member of the US National Academy of Engineering.
+						    	<p><strong>Jack Dongarra</strong> holds an appointment at the University of Tennessee, Oak Ridge National Laboratory, and the University of Manchester. He specializes in numerical algorithms in linear algebra, parallel computing, use of advanced-computer architectures, programming methodology, and tools for parallel computers. He was awarded the IEEE Sid Fernbach Award in 2004; in 2008 he was the recipient of the first IEEE Medal of Excellence in Scalable Computing; in 2010 he was the first recipient of the SIAM Special Interest Group on Supercomputing's award for Career Achievement; in 2011 he was the recipient of the IEEE Charles Babbage Award; and in 2013 he received the ACM/IEEE Ken Kennedy Award. He is a Fellow of the AAAS, ACM, IEEE, and SIAM and a foreign member of the Russian Academy of Science and a member of the US National Academy of Engineering.</p>
 						    </td>
 							</table> 
 						  </td>
 						</tr>
-						</table>						
+						</table>
+
+						<!-- Keynote 2 -->
+						<table id="keynote2">
+						  <tr>
+						    <th><h3><strong>Keynote 2:</strong>Improved Static Analysis to Generate More Efficient Code for Execution of Loop Nests in GPUs</h3></th>
+						  </tr>
+						  <tr>
+						  	<td>
+						  		<h4><strong><a href="http://webdocs.cs.ualberta.ca/~amaral/">Jose Nelson Amaral</a></strong>, University of Alberta - Canada</h4>
+						  	</td>
+						  </tr>
+						  <tr>
+						    <td><p><strong>Resumo:</strong> Em 2018 a IBM e a Nvidia estão entregando dois supercomputadores para o Departamento de Energia dos Estados Unidos. Estes supercomputadores utilizam o POWER 9, a GPU Volta, e a rede de interconexão NVLink. Esta palestra vai descrever como o trabalho de dois alunos de mestrado na Universidade de Alberta foi fundamental para melhorar a qualidade do código gerado para programas escritos em OpenMP 4.x pelos compiladores entregues pela IBM para estes supercomputadores. Este trabalho começou com o desenvolvimento de uma nova análise chamada Arithmetic Control Form (ACF) que aplica os princípios de análise de mancha (taint analysis) para detectar divergência de controle e de acesso de dados em programas escritos em CUDA. Subsequentemente uma outra nova análise, chamada Interaction Point Algebraic Difference (IPAD) foi capaz de provar a não existência de dependências em vários ninhos de laços em OpenMP e possibilitou transformações de laços que levaram a ganhos dramáticos de performance nos programas gerados para execução na GPU Volta. Além de descrever os avanços em análise de programas e geração de código desenvolvidos na University of Alberta, esta palestra também vai descrever o processo que levou estes dois alunos de mestrado a influenciar significativamente os compiladores para estes supercomputadores.</p></td>
+						  </tr>
+						  <tr>
+						  	<td>
+						  	<table border="0px">
+						    <td style="vertical-align:top">
+						    	<img src="images/palestrantes/amaral-profile.jpg" alt="Jose Nelson Amaral" style="width:150px;height:150px;">
+						    </td>
+						    <td>
+						    	<p><strong>Jose Nelson Amaral</strong> é professor de Ciências da Computação na <i>University of Alberta</i>, Canadá. Ele recebeu o Ph.D. em Electrical and Computer Engineering da The University of Texas at Austin, em 1994, um M.E. do Instituto Tecnológico de Aeronáutica, São José dos Campos, SP, Brasil, e um B.E. da Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS), RS, Brasil. Os interesses atuais de pesquisa dele incluem Projeto de Compiladores, Análise Estática, Compilação por Realimentação, Arquitetura de Compiladores, Sistemas de Computação de Alto Desempenho, e a aplicação de métodos de aprendizado para o projeto de compiladores. Suas áreas anteriores de pesquisa incluíram algoritmos conscientes de caches, caches para roteadores de protocolo de internet, redes neurais artificiais, problemas de otimização combinatória, arquiteturas paralelas para sistemas simbólicos, arquiteturas multi-threaded, e modelos de programação. Prof. Amaral é um membro Sênior do IEEE, um <i>Distinguished Engineer</i> da ACM e foi um palestrante Distinto da ACM. Ele foi Chefe do comitê de programa para várias conferências e serviu como editor associado no <i>IEEE Transactions on Computers</i> e no <i>IEEE Transactions of Parallel and Distributed Systems</i>. Em 2012 ele foi selecionado o "Professor do Ano" pelo Centro para Estudos Avançados da IBM em Toronto no Canadá. Em 2015 ele recebeu o prêmio por excelência em ensino da Faculdade de Ciências da <i>University of Alberta</i>.</p>
+						    </td>
+							</table> 
+						  </td>
+						</tr>
+						</table>
+
+						<!-- Keynote 3 -->
+						<table id="keynote3">
+						  <tr>
+						    <th><h3><strong>Keynote 3:</strong>Microarchitecture, Computing Systems, High Performance Computing and End-to-End Deep Neural Networks</h3></th>
+						  </tr>
+						  <tr>
+						  	<td>
+						  		<h4><strong><a href="https://fenix.iscte-iul.pt/homepage/mbjrz@iscte.pt/summary">Prof. Mauricio Breternitz</a></strong>, Research Fellow at ISCTE-IUL Instituto Universitário de Lisboa - ISTAR - DLS</h4>
+						  	</td>
+						  </tr>
+						  <tr>
+						    <td><p><strong>Abstract:</strong> In this multi-part presentation I intend to discuss highlights from my experience as a researcher in industrial labs in the USA (at IBM, Motorola, Intel Labs and IBM Research), discussing the microarchitecture computing systems, and related compilation issues. Then I intend to discuss current and future experience in high performance computing systems leading to Exascale, from system organization to performance analysis and big data applications. Finally I describe current investigation topics which focus on novel applications of end-to-end deep neural networks, focusing on  system organization and research opportunities. I am also available to share experiences related to industry and university interaction and  collaboration.</p></td>
+						  </tr>
+						  <tr>
+						  	<td>
+						  	<table border="0px">
+						    <td style="vertical-align:top">
+						    	<img src="images/palestrantes/mauricio-breternitz.jpg" alt="Mauricio Breternitz" style="width:150px;height:150px;">
+						    </td>
+						    <td>
+						    	<p><strong>Mauricio Breternitz</strong> is a Research Fellow and Invited Auxiliary Professor in DLS group of ISTAR at ISCTE-Lisbon University Institute. He received a Ph.D. in Computer Engineering from Carnegie-Mellon University, is a Senior Member of the IEEE, holds 48 U.S. patents and has 52 more pending in areas related to compilation, code optimization, binary translation, processor, cache and memory system organization and cryptography, and his publications have been cited more than 1016 times. Mauricio's academic service include advising multiple Ph.D. internships and thesis committees, organizing ACM/IEEE conferences; service on multiple program committees as well as participation in successful grant submissions to the U.S. Dept. of Energy and European Horizon 2020. Mauricio's research interest focuses on real-life solutions with practical impact, developed at IBM (T.J. Watson and Austin), Motorola, Intel Labs, TimesN Systems (an Austin startup) and most recently at AMD Research in Austin, Texas where he worked on Exascale computing.  His research areas include end-to-end applications of machine learning, and architecture and performance of computing systems. He worked on parallelizing compilers for a research multiprocessor, and for instruction-level parallel VLIW architectures; on binary translation of x86 codes; on IP telephony libraries and on parallelizing database server programs. At Intel, Mauricio conceived and pushed through product deployment innovative microcode compression inventions, now in every product, that had significant impact (estimated upwards of US$18M savings). His current research focuses on novel understanding and application of end-to-end deep neural networks to achieve efficient computation systems.</p>
+						    	<p>Mauricio is an energetic and innovative researcher with interest in real-life solutions with practical impact, currently researching end-to-end application of machine learning to enhanced living spaces via digital assistance. For a previous employer, Mauricio conceived and pushed through deployment innovative algorithmic & microarchitectural ideas that have had significant positive product impact (estimated upwards of $18M). He holds 48 U.S. patents and has 58 more pending in areas related to compilation, code optimization, binary translation, processor, cache and memory system organization and cryptography. Mauricio's academic service include ACM/IEEE conferences such as IISWC (general chair), HPCA(finance chair),AMAS-BT/ISCA Workshop (organizer & chair), CGO, ISCA, and multiple program committees. Mauricio received the Electronics Engineer degree with honors at ITA-Instituto Tecnologico de Aeronautica, Brazil, a MSc in Computer Science at UNICAMP, Brazil and the Ph.D. in Computer Engineering at Carnegie-Mellon University. He worked on parallelizing compilers for a research multiprocessor and for VLIW architectures, binary translation of x86 codes, on IP telephony libraries and on parallelizing database server programs. Recently he has worked on novel algorithms utilizing CPU and GPUs accelerating machine learning on Apache Spark, on system-level and architectural-level characterization of cloud workloads and on novel approaches to utilizing CPU and GPU in cloud workloads such as MapReduce and GraphLab. He is interested in scale-up and scale-out frameworks for Deep Neural Networks using CPUs and GPUs. He worked at IBM (TJWatson and Austin), Motorola, Intel Labs and TimesN Systems, an Austin startup. For more information, please visit: <br>
+						    	<a href="https://fenix.iscte-iul.pt/homepage/mbjrz@iscte.pt/summary">https://fenix.iscte-iul.pt/homepage/mbjrz@iscte.pt/summary</a>
+						    	<br>
+						    	<a href="https://ciencia.iscte-iul.pt/authors/mbreternitz/publications?view_mode=classic_view">https://ciencia.iscte-iul.pt/authors/mbreternitz/publications?view_mode=classic_view</a>
+						    	<br>
+						    	<a href="https://scholar.google.com/citations?user=pnmGA74AAAAJ">https://scholar.google.com/citations?user=pnmGA74AAAAJ</a>
+						    	</p>
+						    </td>
+							</table> 
+						  </td>
+						</tr>
+						</table>
 					</div>
 				</section>
 
